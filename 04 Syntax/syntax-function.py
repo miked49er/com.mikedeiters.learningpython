@@ -4,7 +4,13 @@
 # Copyright 2010 The BearHeart Group, LLC
 
 def main():
-    print("This is the syntax.py file.")
-    print("This is another line.")
+    foo(1)
+    foo()
+    foo(5)
+
+def foo(a=7):
+    for i in range(a, 10):
+        print(i, end=' ')
+    print()
 
 if __name__ == "__main__": main()

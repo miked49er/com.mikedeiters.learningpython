@@ -4,7 +4,9 @@
 # Copyright 2010 The BearHeart Group, LLC
 
 def main():
-    print("This is the syntax.py file.")
-    print("This is another line.")
+    a, b = 0, 1
+    s = "less than" if a < b else "not less than"
+    print(s)
+
 
 if __name__ == "__main__": main()

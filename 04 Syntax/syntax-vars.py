@@ -4,7 +4,8 @@
 # Copyright 2010 The BearHeart Group, LLC
 
 def main():
-    print("This is the syntax.py file.")
-    print("This is another line.")
+    a = [1, 2, 3, 4, 5]
+    print(a)
+
 
 if __name__ == "__main__": main()
