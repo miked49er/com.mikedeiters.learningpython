@@ -6,6 +6,10 @@
 def main():
     s = 'this is a string'
     for c in s:
+        # if c == 's': continue # moves on
+        # if c == 's': break # break out of the loop
         print(c, end='')
+    else: # when the condition becomes false
+        print('\nelse')
 
 if __name__ == "__main__": main()

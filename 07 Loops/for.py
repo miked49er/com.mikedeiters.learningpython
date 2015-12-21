@@ -4,8 +4,11 @@
 # Copyright 2010 The BearHeart Group, LLC
 
 def main():
-    fh = open('lines.txt')
-    for line in fh.readlines():
-        print(line)
+    # fh = open('lines.txt')
+    # for index, line in enumerate(fh.readlines()):
+    #     print(index, line, end='')
+    str = 'This is a string'
+    for i, char in enumerate(str):
+        if char == 's': print('index {} is a s'.format(i))
 
 if __name__ == "__main__": main()
