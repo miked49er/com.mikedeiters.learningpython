@@ -4,8 +4,29 @@
 # Copyright 2010 The BearHeart Group, LLC
 
 def main():
-    f = open('lines.txt')
-    for line in f:
-        print(line, end = '')
+    # buffersize = 100000 # byte size
+    # infile = open('bigfile.txt', 'r')
+    # outfile = open('new.txt', 'w')
+    # buffer = infile.read(buffersize)
+    # while len(buffer):
+    #     outfile.write(buffer)
+    #     print('.', end='')
+    #     buffer = infile.read(buffersize)
+    # print()
+    # print('Done')
+    read = 'olives.jpg'
+    out = 'newpic.jpg'
+    buffersize = 50000
+    read_binary(read,out,buffersize)
+
+def read_binary(read, out, buffersize):
+    infile = open(read, 'rb')
+    outfile = open(out, 'wb')
+    buffer = infile.read(buffersize)
+    while len(buffer):
+        outfile.write(buffer)
+        print('.', end='')
+        buffer = infile.read(buffersize)
+    print('\nDone.')
 
 if __name__ == "__main__": main()
